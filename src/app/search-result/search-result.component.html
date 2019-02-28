@@ -21,7 +21,10 @@
         <img src="../assets/regular_0.png" alt="0 stars">
     </div> -->
     <p>{{ _result.rating }} Stars</p>
-    <p>{{ _result.location }}</p>
+    <p>{{ _result.location.address1 }}</p>
+    <p>{{ _result.location.address2 }}</p>
+    <p>{{ _result.location.address3 }}</p>
+    <p>{{ _result.location.city }}, {{ _result.location.state }} {{ _result.location.zip_code }}</p>
     <p>{{ _result.display_phone }}</p>
     <div *ngIf="_result.transactions.length > 1; else elseBlock">
       Does {{ _result.name }} deliver? <strong>Yes</strong>  

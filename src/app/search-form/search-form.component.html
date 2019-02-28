@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Search for Open Restaurants</h1>
+
+  <form (submit)="onSearch(price.value, location.value); false">
+    <select name="price" #price required>
+      <option disabled>Price</option>
+      <option value="1">$</option>
+      <option value="2">$$</option>
+      <option value="3">$$$</option>
+      <option value="4">$$$$</option>
+    </select><br/>
+
+    <input type="text" name="location" #location placeholder="City" required/><br/>
+
+    <button class="btn btn-outline-primary" type="submit">SEARCH</button>
+  </form>
+</div>
+
+<div *ngIf="result !== undefined ">
+  <app-search-result [result]="result"></app-search-result>
+</div>

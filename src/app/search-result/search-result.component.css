@@ -1,0 +1,17 @@
+#result {
+    width:80%;
+    margin:5vh auto;
+    border-radius:0.25rem;
+    background-color: #efefef;
+}
+
+img, .text {
+    width:46%;
+    vertical-align: top;
+    display: inline-block;
+    margin:1%;
+}
+
+.text {
+    text-align: left;
+}
